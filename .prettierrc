@@ -1,0 +1,27 @@
+{
+  "importOrder": [
+    "^react$",
+    "^react/(.*)$",
+    "^next$",
+    "^next/(.*)$",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/(.*)$",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "plugins": [
+    "prettier-plugin-sort-json",
+    "@ianvs/prettier-plugin-sort-imports"
+  ],
+  "printWidth": 80,
+  "semi": true,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "tailwindAttributes": ["className"],
+  "tailwindFunctions": ["clsx", "twMerge", "cn", "className", "classNames"],
+  "tailwindStylesheet": "./app/app.css",
+  "trailingComma": "es5",
+  "useTabs": false,
+  "endOfLine": "auto"
+}
