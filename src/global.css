@@ -1,7 +1,10 @@
 :root {
+  --bs-body-color: #454545;
+  --bs-body-color-rgb: 69, 69, 69;
   --bs-success: #009440;
   --bs-success-rgb: 0, 148, 64;
   --bs-success-bg-subtle: #ECF9F1;
+  --bs-warning-bg-subtle: #FFF4C8;
 }
 
 body {
@@ -14,4 +17,18 @@ body {
 
 .cur-pointer {
   cursor: pointer;
+}
+
+.home-link:hover {
+  --bs-border-opacity: 1;
+  background-color: var(--bs-success-bg-subtle);
+}
+
+.font-toschi {
+  color: #622F8F;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
 }

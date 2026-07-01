@@ -1,8 +1,4 @@
-import type { DatasetJogo } from "../domains/jogo.domain";
-import { LUDOBRASIL_DATASET_V1 } from "./ludobrasil.v1.data";
+import { DatasetV1 } from "./v1";
 
-export const LUDOBRASIL_DATASET = LUDOBRASIL_DATASET_V1;
-
-export const LUDOBRASIL_VERSION: Record<number, DatasetJogo> = {
-  1: LUDOBRASIL_DATASET_V1,
-}
+export const CURRENT_DATASET = DatasetV1;
+export const DATASET_HISTORY = [DatasetV1];

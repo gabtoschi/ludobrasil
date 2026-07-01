@@ -1,0 +1,12 @@
+.navbutton:hover {
+  --bs-border-opacity: 1;
+  background-color: var(--bs-success-bg-subtle) !important;
+  color: var(--bs-success);
+}
+
+.navbutton:disabled {
+  color: var(--bs-tertiary-color) !important;
+  border-color: var(--bs-tertiary-color) !important;
+  cursor: not-allowed;
+  opacity: 0.3;
+}

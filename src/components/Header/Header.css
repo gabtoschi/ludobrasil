@@ -1,0 +1,12 @@
+.header-logo {
+  max-height: 70px;
+}
+
+.header-link:hover {
+  text-decoration: underline !important;
+}
+
+.header-link.active {
+  color: var(--bs-success) !important;
+  text-decoration: underline !important;
+}

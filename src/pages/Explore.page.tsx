@@ -1,15 +1,31 @@
 import JogoItem from "../components/JogoItem/JogoItem";
-import { LUDOBRASIL_DATASET } from "../dataset";
+import Pagination from "../components/Pagination/Pagination";
+import SectionHeader from "../components/SectionHeader/SectionHeader";
+import { CURRENT_DATASET } from "../dataset";
+import usePagination from "../hooks/usePagination.hook";
 
 export default function ExplorePage() {
+  const {
+    currentPage,
+    currentItems,
+    ...paginationProps
+  } = usePagination(CURRENT_DATASET.data, 20);
+
   return (
-    <section className="mt-5">
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[0]} />
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[1]} />
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[2]} />
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[3]} />
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[4]} />
-      <JogoItem className="mb-3" jogo={LUDOBRASIL_DATASET[5]} />
+    <>
+    <SectionHeader
+      size='large'
+      before=''
+      focus='Explore'
+      after=' jogos brasileiros autorais'
+      subtitle='Ao escolher um jogo, você será redirecionado para a sua página na Ludopedia.'
+    />
+
+    <section>
+      {currentItems.map((jogo) => <JogoItem key={jogo.titulo} className="mb-3" jogo={jogo} />)}
+
+      <Pagination currentPage={currentPage} {...paginationProps} />
     </section>
+    </>
   );
 }
