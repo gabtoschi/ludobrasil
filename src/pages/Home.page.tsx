@@ -14,7 +14,7 @@ export default function HomePage() {
 
   return <>
     <header className="mb-5">
-        <h1 className="mb-4 text-center">Jogos de tabuleiro e cartas <b className="text-success">feitos pelo Brasil, para o Brasil</b></h1>
+        <h1 className="mb-4 text-center">Jogos de tabuleiro e cartas <b className="text-success">feitos por brasileiros</b></h1>
 
         <h5 className="text-center lh-base mb-5">O projeto <b>LudoBrasil</b> tem o objetivo de fazer um levantamento extenso dos jogos de mesa criados no território nacional, com foco na preservação da história do game design brasileiro e o reconhecimento das pessoas autoras.</h5>
     </header>
