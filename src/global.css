@@ -1,5 +1,17 @@
+:root {
+  --bs-success: #009440;
+  --bs-success-rgb: 0, 148, 64;
+  --bs-success-bg-subtle: #ECF9F1;
+}
+
 body {
+  background-color: #FBFBFB;
+
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.cur-pointer {
+  cursor: pointer;
 }

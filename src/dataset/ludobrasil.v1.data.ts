@@ -1,7 +1,7 @@
-import type { Jogo } from "../domains/jogo.domain";
+import type { DatasetJogo } from "../domains/jogo.domain";
 
-export const LUDOBRASIL_DATASET_V1: Jogo[] = [
-{ano: 2026,titulo: "Acarajé",autores: ["Valter Bispo", "dois", "tres", "quatro"],ludopediaID: 81999,ludopediaURL: "https://ludopedia.com.br/jogo/acaraje",},
+export const LUDOBRASIL_DATASET_V1: DatasetJogo = [
+{ano: 2026,titulo: "Polarizando: a disputa narrativa na política brasileira",autores: ["Hélia Vannucchi", "Paulo Lenço (Vermelho)", "Dôuglas Ferreira", "Ana Flávia Balieiro", "Matheus Melo", "Pedro Artur", "Willian Cocito"],ludopediaID: 81999,ludopediaURL: "https://ludopedia.com.br/jogo/acaraje",},
 {ano: 2026,titulo: "Athos Bulcão | Master Pieces",autores: ["Renato Keiteris", "Fabiano Costa"],ludopediaID: 71312,ludopediaURL: "https://ludopedia.com.br/jogo/athos-bulcao-master-pieces",},
 {ano: 2026,titulo: "Bitenmap",autores: ["Lucas Nascimento"],ludopediaID: 85398,ludopediaURL: "https://ludopedia.com.br/jogo/bitenmap",},
 {ano: 2026,titulo: "Investigadores",autores: ["Jefe Moreira", "Leo Kanan"],ludopediaID: 79720,ludopediaURL: "https://ludopedia.com.br/jogo/investigadores",},

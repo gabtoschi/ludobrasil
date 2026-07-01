@@ -5,3 +5,5 @@ export interface Jogo {
   ludopediaID: number;
   ludopediaURL: string;
 }
+
+export type DatasetJogo = Jogo[];

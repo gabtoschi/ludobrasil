@@ -1,0 +1,31 @@
+:root {
+  --jogo-item--capa-size: 100px;
+}
+
+.item:hover {
+  --bs-border-opacity: 1;
+  background-color: var(--bs-success-bg-subtle);
+}
+
+.capa-wrapper {
+  width: var(--jogo-item--capa-size);
+  height: var(--jogo-item--capa-size);
+}
+
+.capa {
+  max-width: var(--jogo-item--capa-size);
+  max-height: var(--jogo-item--capa-size);
+}
+
+.titulo {
+  font-size: 24px;
+}
+
+.ano {
+  font-size: 20px;
+}
+
+.autores {
+  font-size: 14px;
+}
+
